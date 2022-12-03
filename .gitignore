@@ -46,3 +46,7 @@ app.*.map.json
 /.dart_tool/
 /build/
 .dart_tool
+android/local.properties
+android/.gradle/buildOutputCleanup
+android/.gradle/7.4/fileHashes
+android/.gradle/7.4/executionHistory
