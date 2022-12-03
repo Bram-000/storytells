@@ -1,0 +1,26 @@
+{
+  "app_title": "Storytells",
+
+  "age": "age",
+  "sex": "sex",
+
+  "cat_happy": "Happy 😊",
+  "cat_sad": "Sad ☹️",
+  "cat_funny": "Funny 😂",
+  "cat_scary": "Scary 😱",
+  "cat_love": "Love 🥰",
+  "cat_angry": "Angry 🤬",
+  "cat_dramatic": "Dramatic 🤭",
+  "cat_disgusting": "Disgusting 🤢",
+  "cat_pride": "Pride ‍🌈",
+  "cat_other": "Other 🦄",
+
+  "male": "Male",
+  "female": "Female",
+  "other": "Other",
+  "lgbt+": "Lgbt+",
+  "M": "M",
+  "F": "F",
+  "O": "O",
+  "LGBT+": "LGBT+"
+}

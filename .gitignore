@@ -42,3 +42,13 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+.idea
+/.dart_tool/
+/build/
+.dart_tool
+android/local.properties
+android/.gradle/buildOutputCleanup
+android/.gradle/7.4/fileHashes
+android/.gradle/7.4/executionHistory
+android/.gradle/file-system.probe
+android/.gradle/7.4

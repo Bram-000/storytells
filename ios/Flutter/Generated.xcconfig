@@ -1,14 +1,15 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=/Users/andreiramescu/Developer/Flutter/SDK/flutter
-FLUTTER_APPLICATION_PATH=/Users/andreiramescu/IdeaProjects/storytells
+FLUTTER_ROOT=/Users/andreiramescu/fvm/versions/3.3.5
+FLUTTER_APPLICATION_PATH=/Users/andreiramescu/Developer/Personal/storytells
 COCOAPODS_PARALLEL_CODE_SIGN=true
-FLUTTER_TARGET=lib/main.dart
+FLUTTER_TARGET=/Users/andreiramescu/Developer/Personal/storytells/lib/main.dart
 FLUTTER_BUILD_DIR=build
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1
 EXCLUDED_ARCHS[sdk=iphonesimulator*]=i386
 EXCLUDED_ARCHS[sdk=iphoneos*]=armv7
+DART_DEFINES=Zmx1dHRlci5pbnNwZWN0b3Iuc3RydWN0dXJlZEVycm9ycz10cnVl,RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==
 DART_OBFUSCATION=false
 TRACK_WIDGET_CREATION=true
 TREE_SHAKE_ICONS=false
-PACKAGE_CONFIG=.dart_tool/package_config.json
+PACKAGE_CONFIG=/Users/andreiramescu/Developer/Personal/storytells/.dart_tool/package_config.json
