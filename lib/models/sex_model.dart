@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
+
 import '../themes/theme.dart';
 
 enum Sex {
@@ -73,8 +74,8 @@ extension SexExtension on Sex {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            STTTheme.orangeCard,
-            STTTheme.redCard,
+            STTTheme.topLCard,
+            STTTheme.bottomLCard,
           ],
         );
     }
@@ -124,13 +125,13 @@ extension SexExtension on Sex {
       case Sex.lgbt:
         return [
           BoxShadow(
-            color: STTTheme.orangeCard.withOpacity(0.5),
+            color: STTTheme.topLCard.withOpacity(0.5),
             spreadRadius: spred,
             blurRadius: blurRadius,
             // offset: const Offset(-5, -5),
           ),
           BoxShadow(
-            color: STTTheme.redCard.withOpacity(0.5),
+            color: STTTheme.bottomLCard.withOpacity(0.5),
             spreadRadius: spred,
             blurRadius: blurRadius,
             // offset: const Offset(5, 5),

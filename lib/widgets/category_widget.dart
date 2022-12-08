@@ -10,31 +10,28 @@ class CategoryWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 10.h,
-      margin: const EdgeInsets.only(top: 8),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: Category.values.length,
         itemBuilder: (_, index) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: Container(
-              decoration: BoxDecoration(
-                color: Category.values[index].color,
-                borderRadius: const BorderRadius.all(
-                  Radius.circular(20),
-                ),
-                // TODO Func for the shadow
-                // boxShadow: storyCard.sex.toShadow()),
+          return Container(
+            margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 20),
+            decoration: BoxDecoration(
+              color: Category.values[index].color,
+              borderRadius: const BorderRadius.all(
+                Radius.circular(8),
               ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                child: Center(
-                  child: Text(
-                    Category.values[index].name,
-                    style: STTTheme.categoryListStyle,
-                  ),
+              // TODO Func for the shadow
+              // boxShadow: storyCard.sex.toShadow()),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Center(
+                child: Text(
+                  Category.values[index].name,
+                  style: STTTheme.categoryListStyle,
                 ),
               ),
             ),

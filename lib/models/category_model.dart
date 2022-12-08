@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:storytells/themes/theme.dart';
 
 enum Category {
   happy,
@@ -65,21 +66,21 @@ extension CategoryExtension on Category {
     }
   }
 
-  //TODO: change all colors to match old app
+  //TODO: add a color for every category
   Color get color {
     switch (this) {
       case Category.happy:
-        return Colors.red;
+        return STTTheme.purpleCard;
       case Category.sad:
-        return Colors.blue;
+        return STTTheme.bottomLCard;
       case Category.funny:
-        return Colors.green;
+        return STTTheme.topLCard;
       case Category.scary:
-        return Colors.yellow;
+        return STTTheme.yellowCard;
       case Category.love:
-        return Colors.purple;
+        return STTTheme.greenCard;
       case Category.angry:
-        return Colors.orange;
+        return STTTheme.blueCard;
       case Category.dramatic:
         return Colors.red;
       case Category.disgusting:

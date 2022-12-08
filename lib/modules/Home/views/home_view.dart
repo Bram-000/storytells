@@ -39,7 +39,7 @@ class HomeView extends GetWidget<HomeController> {
                     ),
                   ],
                   options: CarouselOptions(
-                    height: 65.h,
+                    height: 60.h,
                     viewportFraction: 0.8,
                     initialPage: 0,
                     enableInfiniteScroll: false,
