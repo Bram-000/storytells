@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/widgets.dart';
 import 'package:sizer/sizer.dart';
 import 'package:storytells/models/category_model.dart';
@@ -11,7 +9,6 @@ import '../models/card_model.dart';
 import '../themes/theme.dart';
 import 'bottom_row_card.dart';
 
-
 class StoryCard extends StatelessWidget {
   final Story storyCard;
 
@@ -21,7 +18,7 @@ class StoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        height: 60.h,
+        height: 55.h,
         decoration: BoxDecoration(
             gradient: storyCard.sex.toColor(),
             borderRadius: const BorderRadius.all(
@@ -37,10 +34,10 @@ class StoryCard extends StatelessWidget {
               category: storyCard.category.emoji,
             ),
             Container(
-              height: 45.h,
+              height: 40.h,
               width: 70.w,
               decoration: const BoxDecoration(
-                color: STTTheme.white,
+                color: STheme.white,
                 borderRadius: BorderRadius.all(
                   Radius.circular(20),
                 ),

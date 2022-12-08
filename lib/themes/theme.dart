@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:themed/themed.dart';
 
-class STTTheme {
+class STheme {
   //Basic colors
   static const white = ColorRef(Colors.white);
   static const blue = ColorRef(Colors.blue);
@@ -21,15 +21,40 @@ class STTTheme {
   static const bottomGreenCard = Color(0xFF78FFd6);
 
   //Lgbt
-  static const purpleCard = Color(0xFF9C4F96);
-  static const redCard = Color(0xFFFF6355);
-  static const orangeCard = Color(0xFFFBA949);
-  static const yellowCard = Color(0xFFFAE442);
-  static const greenCard = Color(0xFF8BD448);
-  static const blueCard = Color(0xFF2AA8F2);
+  static const topLCard = Color(0xFFFBA949);
+  static const bottomLCard = Color(0xFFFF6355);
 
-  //Text style
+  //Gold
+  static const topGold = Color(0xFFFFD700);
+  static const bottomGold = Color(0xFFBFAB40);
+  //Silver
+  static const topSilver = Color(0xFFC0C0C0);
+  static const bottomSilver = Color(0xFFA0A0A0);
+  //Bronze
+  static const topBronze = Color(0xFFCA6F1E);
+  static const bottomBronze = Color(0xFFA5774F);
+
+  //Comment
+  static const commentLight = Color(0xFFEBEDEF);
+  static const commentDark = Color(0xFF5D6D7E);
+  //Categories
+  static const angry = Color(0xFF7CCE9F);
+  static const disgusting = Color(0xFF85C1E9);
+  static const dramatic = Color(0xFFADB6BE);
+  static const funny = Color(0xFFF7DC6F);
+  static const happy = Color(0xFFEFB179);
+  static const love = Color(0xFFEB6F62);
+  static const other = Color(0xFFC39BD2);
+  static const pride = Color(0xFFEBDEEF);
+  static const sad = Color(0xFFF8C470);
+  static const scary = Color(0xFF82DFAA);
+
+  //Text styles
   static const cardRowStyle = TextStyleRef(
-    TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: STTTheme.white),
+    TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: STheme.white),
+  );
+
+  static const categoryListStyle = TextStyleRef(
+    TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: STheme.white),
   );
 }

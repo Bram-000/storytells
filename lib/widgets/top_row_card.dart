@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:sizer/sizer.dart';
 
 import '../themes/theme.dart';
 
@@ -16,14 +17,14 @@ class TopRowCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 15, bottom: 10),
+    return SizedBox(
+      height: 5.h,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Text("Age: $age", style: STTTheme.cardRowStyle),
+          Text("Age: $age", style: STheme.cardRowStyle),
           Text(category),
-          Text("Sex: $sex", style: STTTheme.cardRowStyle),
+          Text("Sex: $sex", style: STheme.cardRowStyle),
         ],
       ),
     );
