@@ -22,7 +22,7 @@ class HomeView extends GetWidget<HomeController> {
           body: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const CategoryWidget(),
+              const CategoriesWidget(),
               CarouselSlider(
                   items: [
                     StoryCard(

@@ -22,9 +22,9 @@ class TopRowCard extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          Text("Age: $age", style: STTTheme.cardRowStyle),
+          Text("Age: $age", style: STheme.cardRowStyle),
           Text(category),
-          Text("Sex: $sex", style: STTTheme.cardRowStyle),
+          Text("Sex: $sex", style: STheme.cardRowStyle),
         ],
       ),
     );

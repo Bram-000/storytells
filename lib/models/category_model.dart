@@ -16,6 +16,9 @@ enum Category {
 }
 
 extension CategoryExtension on Category {
+  static const spread = 2.0;
+  static const blurRadius = 5.0;
+
   String get name {
     switch (this) {
       case Category.happy:
@@ -66,29 +69,113 @@ extension CategoryExtension on Category {
     }
   }
 
-  //TODO: add a color for every category
   Color get color {
     switch (this) {
       case Category.happy:
-        return STTTheme.purpleCard;
+        return STheme.happy;
       case Category.sad:
-        return STTTheme.bottomLCard;
+        return STheme.sad;
       case Category.funny:
-        return STTTheme.topLCard;
+        return STheme.funny;
       case Category.scary:
-        return STTTheme.yellowCard;
+        return STheme.scary;
       case Category.love:
-        return STTTheme.greenCard;
+        return STheme.love;
       case Category.angry:
-        return STTTheme.blueCard;
+        return STheme.angry;
       case Category.dramatic:
-        return Colors.red;
+        return STheme.dramatic;
       case Category.disgusting:
-        return Colors.red;
+        return STheme.disgusting;
       case Category.pride:
-        return Colors.red;
+        return STheme.pride;
       case Category.other:
-        return Colors.red;
+        return STheme.other;
+    }
+  }
+
+  List<BoxShadow> toShadow() {
+    switch (this) {
+      case Category.happy:
+        return [
+          BoxShadow(
+            color: STheme.happy.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.sad:
+        return [
+          BoxShadow(
+            color: STheme.sad.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.funny:
+        return [
+          BoxShadow(
+            color: STheme.funny.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.scary:
+        return [
+          BoxShadow(
+            color: STheme.scary.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.love:
+        return [
+          BoxShadow(
+            color: STheme.love.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.angry:
+        return [
+          BoxShadow(
+            color: STheme.angry.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.dramatic:
+        return [
+          BoxShadow(
+            color: STheme.dramatic.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.disgusting:
+        return [
+          BoxShadow(
+            color: STheme.disgusting.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.pride:
+        return [
+          BoxShadow(
+            color: STheme.pride.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
+      case Category.other:
+        return [
+          BoxShadow(
+            color: STheme.other.withOpacity(0.5),
+            spreadRadius: spread,
+            blurRadius: blurRadius,
+          )
+        ];
     }
   }
 

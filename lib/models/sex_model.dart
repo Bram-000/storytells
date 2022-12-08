@@ -11,7 +11,7 @@ enum Sex {
 }
 
 extension SexExtension on Sex {
-  static const spred = 2.0;
+  static const spread = 2.0;
   static const blurRadius = 5.0;
 
   String get abbreviation {
@@ -47,8 +47,8 @@ extension SexExtension on Sex {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            STTTheme.topBlueCard,
-            STTTheme.bottomBlueCard,
+            STheme.topBlueCard,
+            STheme.bottomBlueCard,
           ],
         );
       case Sex.female:
@@ -56,8 +56,8 @@ extension SexExtension on Sex {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            STTTheme.topPinkCard,
-            STTTheme.bottomPinkCard,
+            STheme.topPinkCard,
+            STheme.bottomPinkCard,
           ],
         );
       case Sex.other:
@@ -65,8 +65,8 @@ extension SexExtension on Sex {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            STTTheme.topGreenCard,
-            STTTheme.bottomGreenCard,
+            STheme.topGreenCard,
+            STheme.bottomGreenCard,
           ],
         );
       case Sex.lgbt:
@@ -74,8 +74,8 @@ extension SexExtension on Sex {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            STTTheme.topLCard,
-            STTTheme.bottomLCard,
+            STheme.topLCard,
+            STheme.bottomLCard,
           ],
         );
     }
@@ -86,53 +86,53 @@ extension SexExtension on Sex {
       case Sex.male:
         return [
           BoxShadow(
-            color: STTTheme.bottomBlueCard.withOpacity(0.5),
-            spreadRadius: spred,
+            color: STheme.bottomBlueCard.withOpacity(0.5),
+            spreadRadius: spread,
             blurRadius: blurRadius,
           ),
           BoxShadow(
-            color: STTTheme.topBlueCard.withOpacity(0.5),
-            spreadRadius: spred,
+            color: STheme.topBlueCard.withOpacity(0.5),
+            spreadRadius: spread,
             blurRadius: blurRadius,
           ),
         ];
       case Sex.female:
         return [
           BoxShadow(
-            color: STTTheme.topPinkCard.withOpacity(0.5),
-            spreadRadius: spred,
+            color: STheme.topPinkCard.withOpacity(0.5),
+            spreadRadius: spread,
             blurRadius: blurRadius,
           ),
           BoxShadow(
-            color: STTTheme.bottomPinkCard.withOpacity(0.5),
-            spreadRadius: spred,
+            color: STheme.bottomPinkCard.withOpacity(0.5),
+            spreadRadius: spread,
             blurRadius: blurRadius,
           ),
         ];
       case Sex.other:
         return [
           BoxShadow(
-            color: STTTheme.topGreenCard.withOpacity(0.5),
-            spreadRadius: spred,
+            color: STheme.topGreenCard.withOpacity(0.5),
+            spreadRadius: spread,
             blurRadius: blurRadius,
           ),
           BoxShadow(
-            color: STTTheme.bottomGreenCard.withOpacity(0.5),
-            spreadRadius: spred,
+            color: STheme.bottomGreenCard.withOpacity(0.5),
+            spreadRadius: spread,
             blurRadius: blurRadius,
           ),
         ];
       case Sex.lgbt:
         return [
           BoxShadow(
-            color: STTTheme.topLCard.withOpacity(0.5),
-            spreadRadius: spred,
+            color: STheme.topLCard.withOpacity(0.5),
+            spreadRadius: spread,
             blurRadius: blurRadius,
             // offset: const Offset(-5, -5),
           ),
           BoxShadow(
-            color: STTTheme.bottomLCard.withOpacity(0.5),
-            spreadRadius: spred,
+            color: STheme.bottomLCard.withOpacity(0.5),
+            spreadRadius: spread,
             blurRadius: blurRadius,
             // offset: const Offset(5, 5),
           ),

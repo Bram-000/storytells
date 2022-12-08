@@ -19,21 +19,21 @@ class BottomRowCard extends StatelessWidget {
             onPressed: null,
             icon: Icon(
               Icons.favorite_border,
-              color: STTTheme.white,
+              color: STheme.white,
             ),
           ),
           IconButton(
             onPressed: null,
             icon: Icon(
               Icons.share,
-              color: STTTheme.white,
+              color: STheme.white,
             ),
           ),
           IconButton(
             onPressed: null,
             icon: Icon(
               Icons.comment,
-              color: STTTheme.white,
+              color: STheme.white,
             ),
           ),
         ],

@@ -37,7 +37,7 @@ class StoryCard extends StatelessWidget {
               height: 40.h,
               width: 70.w,
               decoration: const BoxDecoration(
-                color: STTTheme.white,
+                color: STheme.white,
                 borderRadius: BorderRadius.all(
                   Radius.circular(20),
                 ),
