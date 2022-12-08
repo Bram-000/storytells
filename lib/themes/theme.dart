@@ -32,4 +32,8 @@ class STTTheme {
   static const cardRowStyle = TextStyleRef(
     TextStyle(fontSize: 18, fontWeight: FontWeight.w700, color: STTTheme.white),
   );
+
+  static const categoryListStyle = TextStyleRef(
+    TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: STTTheme.white),
+  );
 }

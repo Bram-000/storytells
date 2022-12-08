@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 enum Category {
@@ -61,6 +62,32 @@ extension CategoryExtension on Category {
         return "️‍🌈";
       case Category.other:
         return "🦄";
+    }
+  }
+
+  //TODO: change all colors to match old app
+  Color get color {
+    switch (this) {
+      case Category.happy:
+        return Colors.red;
+      case Category.sad:
+        return Colors.blue;
+      case Category.funny:
+        return Colors.green;
+      case Category.scary:
+        return Colors.yellow;
+      case Category.love:
+        return Colors.purple;
+      case Category.angry:
+        return Colors.orange;
+      case Category.dramatic:
+        return Colors.red;
+      case Category.disgusting:
+        return Colors.red;
+      case Category.pride:
+        return Colors.red;
+      case Category.other:
+        return Colors.red;
     }
   }
 
