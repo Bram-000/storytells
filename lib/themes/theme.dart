@@ -57,4 +57,8 @@ class STheme {
   static const categoryListStyle = TextStyleRef(
     TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: STheme.white),
   );
+
+  static const appBarTitleStyle = TextStyleRef(
+    TextStyle(fontSize: 24, fontWeight: FontWeight.w500, color: STheme.white),
+  );
 }
