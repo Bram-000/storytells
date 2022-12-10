@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'package:storytells/modules/Home/controllers/home_controller.dart';
 
 import '../models/category_model.dart';
 import '../themes/theme.dart';
@@ -26,7 +27,7 @@ class CategoriesWidget extends StatelessWidget {
   }
 }
 
-class SingleCategoryWidget extends StatelessWidget {
+class SingleCategoryWidget extends GetWidget<HomeController> {
   const SingleCategoryWidget({
     super.key,
     required this.index,
@@ -35,19 +36,19 @@ class SingleCategoryWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 20),
-      decoration: BoxDecoration(
-        color: Category.values[index].color,
-        borderRadius: const BorderRadius.all(
-          Radius.circular(10),
-        ),
-        // TODO Func for the shadow
-        boxShadow: Category.values[index].toShadow(),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-        child: Center(
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      child: Center(
+        child: ElevatedButton(
+          onPressed: () => controller.filter(Category.values[index]),
+          style: ElevatedButton.styleFrom(
+            elevation: 10,
+            backgroundColor: Category.values[index].color,
+            shadowColor: Category.values[index].color.withOpacity(0.5),
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(20)),
+            ),
+          ),
           child: Text(
             Category.values[index].name,
             style: STheme.categoryListStyle,
