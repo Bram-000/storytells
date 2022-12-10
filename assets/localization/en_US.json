@@ -1,7 +1,9 @@
 {
   "app_title": "Storytells",
+
   "age": "age",
   "sex": "sex",
+
   "cat_happy": "Happy 😊",
   "cat_sad": "Sad 😞️",
   "cat_funny": "Funny 😂",
@@ -12,12 +14,20 @@
   "cat_disgusting": "Disgusting 🤢",
   "cat_pride": "Pride ‍🌈",
   "cat_other": "Other 🦄",
+
   "male": "Male",
   "female": "Female",
   "other": "Other",
   "lgbt+": "Lgbt+",
+
   "M": "M",
   "F": "F",
   "O": "O",
-  "LGBT+": "LGBT+"
+  "LGBT+": "LGBT+",
+
+  "home": "Home",
+  "profile": "Profile",
+  "add_story": "Add story",
+  "top_story": "Top stories",
+  "soon_to_delete": "Soon to delete"
 }

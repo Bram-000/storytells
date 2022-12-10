@@ -52,7 +52,11 @@ class StoryCard extends StatelessWidget {
                 ),
               ),
             ),
-            const BottomRowCard()
+            BottomRowCard(
+              numberOfLikes: 0,
+              numberOfComments: 0,
+              isLikedByMe: false,
+            )
           ],
         ),
       ),

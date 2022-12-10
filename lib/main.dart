@@ -17,7 +17,7 @@ void main() async {
     fallbackLocale: const Locale('en', 'US'),
     getPages: pages,
     theme: ThemeData.light(),
-    initialRoute: Routes.home,
+    initialRoute: Routes.bottomBar,
     translationsKeys: Localization.translationsKeys,
   ));
 }
