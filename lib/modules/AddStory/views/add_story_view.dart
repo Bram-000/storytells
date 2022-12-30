@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:storytells/models/sex_model.dart';
+import 'package:storytells/widgets/form_elevated_button.dart';
 
 import '../../../models/category_model.dart';
 import '../../../themes/theme.dart';
@@ -31,12 +31,13 @@ class AddStoryView extends GetView<AddStoryController> {
               padding: const EdgeInsets.only(left: 8.0, right: 8.0),
               child: Obx(
                 () => Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
+                    Text('lorem_ipsum'.tr),
                     TextFormField(
                       textAlign: TextAlign.center,
                       controller: controller.ageController,
-                      decoration: const InputDecoration(labelText: 'Age'),
+                      decoration: InputDecoration(labelText: 'age_form'.tr),
                       validator: controller.ageValidator,
                       keyboardType: TextInputType.number,
                     ),
@@ -44,26 +45,47 @@ class AddStoryView extends GetView<AddStoryController> {
                       maxLines: 6,
                       minLines: 6,
                       controller: controller.storyController,
-                      decoration:
-                          const InputDecoration(labelText: 'Tell your story'),
+                      decoration: InputDecoration(labelText: 'tell_form'.tr),
                       validator: controller.validator,
                       keyboardType: TextInputType.multiline,
                     ),
-                    ElevatedButton(
-                      onPressed: () => controller.showPicker(
-                        context,
-                        Category.values.map((cat) => cat.name).toList(),
-                        true,
-                      ),
-                      child: Text(controller.categoryButtonTitle.value),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        SizedBox(
+                          width: 45.w,
+                          child: FormElevatedButton(
+                            gradient: controller.categoryButtonColor.value,
+                            onPressed: () => controller.showPicker(
+                              context,
+                              Category.values.map((cat) => cat.name).toList(),
+                              true,
+                            ),
+                            child: Text(controller.categoryButtonTitle.value),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 45.w,
+                          child: FormElevatedButton(
+                            gradient: controller.sexButtonColor.value,
+                            onPressed: () => controller.showPicker(
+                              context,
+                              Sex.values.map((sex) => sex.name).toList(),
+                              false,
+                            ),
+                            child: Text(controller.sexButtonTitle.value),
+                          ),
+                        ),
+                      ],
                     ),
-                    ElevatedButton(
-                      onPressed: () => controller.showPicker(
-                        context,
-                        Sex.values.map((sex) => sex.name).toList(),
-                        false,
+                    SizedBox(
+                      width: 100.w,
+                      height: 7.h,
+                      child: FormElevatedButton(
+                        gradient: controller.sexButtonColor.value,
+                        onPressed: null,
+                        child: Text('add_button_form'.tr),
                       ),
-                      child: Text(controller.sexButtonTitle.value),
                     ),
                   ],
                 ),

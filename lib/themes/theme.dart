@@ -17,8 +17,8 @@ class STheme {
   static const bottomPinkCard = Color(0xFFFC6767);
 
   //Other
-  static const topGreenCard = Color(0xFFA8FF78);
-  static const bottomGreenCard = Color(0xFF78FFd6);
+  static const topGreenCard = Color(0xFFC7F800);
+  static const bottomGreenCard = Color(0xFF078513);
 
   //Lgbt
   static const topLCard = Color(0xFFFBA949);
