@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:storytells/themes/theme.dart';
 
 import 'localization/localization.dart';
 import 'routes/pages.dart';
@@ -12,11 +13,11 @@ void main() async {
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
   runApp(GetMaterialApp(
-    title: "Storytells",
+    title: "app_title".tr,
     locale: Get.deviceLocale,
     fallbackLocale: const Locale('en', 'US'),
     getPages: pages,
-    theme: ThemeData.light(),
+    theme: STheme.mainTheme,
     initialRoute: Routes.bottomBar,
     translationsKeys: Localization.translationsKeys,
   ));

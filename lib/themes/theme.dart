@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_color_generator/material_color_generator.dart';
 import 'package:themed/themed.dart';
 
 class STheme {
@@ -17,8 +18,8 @@ class STheme {
   static const bottomPinkCard = Color(0xFFFC6767);
 
   //Other
-  static const topGreenCard = Color(0xFFC7F800);
-  static const bottomGreenCard = Color(0xFF078513);
+  static const topGreenCard = Color(0xFFF4D10B);
+  static const bottomGreenCard = Color(0xFF17A6B2);
 
   //Lgbt
   static const topLCard = Color(0xFFFBA949);
@@ -60,5 +61,13 @@ class STheme {
 
   static const appBarTitleStyle = TextStyleRef(
     TextStyle(fontSize: 24, fontWeight: FontWeight.w500, color: STheme.white),
+  );
+
+  //Main theme
+  static var mainTheme = ThemeData(
+    primarySwatch: generateMaterialColor(color: Colors.blue),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        selectedItemColor: commentDark, unselectedItemColor: topSilver),
+    scaffoldBackgroundColor: const Color(0xFFFDFEFE),
   );
 }

@@ -35,27 +35,32 @@ class HomeView extends GetWidget<HomeController> {
                       ),
                     )
                   : Obx(
-                      () => CarouselSlider.builder(
-                        itemCount: controller.filteredStories.value.length,
-                        itemBuilder:
-                            (BuildContext context, int index, int realIndex) {
-                          return StoryCard(
-                            storyCard:
-                                controller.filteredStories.value[realIndex],
-                          );
-                        },
-                        options: CarouselOptions(
-                          height: 60.h,
-                          viewportFraction: 0.8,
-                          initialPage: 0,
-                          enableInfiniteScroll: false,
-                          reverse: false,
-                          autoPlayCurve: Curves.fastOutSlowIn,
-                          enlargeCenterPage: true,
-                          scrollDirection: Axis.horizontal,
-                          scrollPhysics: BouncingScrollPhysics(),
-                        ),
-                      ),
+                      () => controller.filteredStories.isEmpty
+                          //TODO: translate
+                          ? const Text(
+                              "there are no stories for this category now")
+                          : CarouselSlider.builder(
+                              itemCount:
+                                  controller.filteredStories.value.length,
+                              itemBuilder: (BuildContext context, int index,
+                                  int realIndex) {
+                                return StoryCard(
+                                  storyCard: controller
+                                      .filteredStories.value[realIndex],
+                                );
+                              },
+                              options: CarouselOptions(
+                                height: 60.h,
+                                viewportFraction: 0.8,
+                                initialPage: 0,
+                                enableInfiniteScroll: false,
+                                reverse: false,
+                                autoPlayCurve: Curves.fastOutSlowIn,
+                                enlargeCenterPage: true,
+                                scrollDirection: Axis.horizontal,
+                                scrollPhysics: BouncingScrollPhysics(),
+                              ),
+                            ),
                     ),
             ],
           ),

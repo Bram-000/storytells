@@ -8,16 +8,14 @@ import 'package:storytells/modules/Profile/views/profile_view.dart';
 import 'package:storytells/modules/SoonTo/views/soon_to_view.dart';
 import 'package:storytells/modules/TopOf/views/top_of_view.dart';
 
-import '../../../themes/theme.dart';
-
 class BottomNavigationView extends GetWidget<BottomNavigationController> {
   BottomNavigationView({Key? key}) : super(key: key);
   final screens = [
-    HomeView(),
-    TopOfView(),
-    AddStoryView(),
-    SoonToView(),
-    ProfileView(),
+    const HomeView(),
+    const TopOfView(),
+    const AddStoryView(),
+    const SoonToView(),
+    const ProfileView(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -53,8 +51,6 @@ class BottomNavigationView extends GetWidget<BottomNavigationController> {
                 label: 'profile'.tr,
               ),
             ],
-            selectedItemColor: STheme.commentDark,
-            unselectedItemColor: STheme.topSilver,
             type: BottomNavigationBarType.shifting,
             currentIndex: controller.selectedIndex.value,
             onTap: (index) {
